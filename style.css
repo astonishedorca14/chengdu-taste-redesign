@@ -1,0 +1,193 @@
+/* jeff's css reset from lecture */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  img {
+    position: relative;
+  }
+  
+a {
+    text-decoration: none;
+    /* color: #fff; */
+  }
+  
+  
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+  }
+
+html {
+    background-color: #f8f8ff;
+}
+  
+  /* ----------------------------- */
+
+.header {
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 0px;
+    text-shadow: 3px 3px 0 #29fef0;
+}
+
+.header-wrapper {
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b96cd;
+    color: white;
+    text-transform: uppercase;
+}
+
+.info-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-color: #EBB36E;
+    border-width: 5px;
+    border-radius: 3em;
+    border-style: solid;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.info-wrapper .section-header {
+    background-color: #f8f8ff;
+    color: #2b96cd;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+    /* add stroke to text 3px*/
+    text-shadow: 3px 3px 0 #29fef0;
+    margin-bottom: -30px;
+    padding: 0px 15px;
+    transform: translateY(-65px);
+}
+
+#end-header{
+    color: #2b96cd;
+    font-weight: bolder;
+    font-size: 3.3em;
+    /* margin-top: 2em; */
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0 #29fef0;
+}
+
+#intro-hook {
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.content {
+    margin: 3em 17vw;
+}
+
+.sketch {
+    max-width: 100%;
+}
+
+.list {
+    padding: 5px;
+}
+
+.persona {
+    max-width: 100%;
+}
+
+.persona-text {
+    margin-top: 0px;
+}
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+} 
+
+h3 {
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #2b96cd;
+    text-shadow: 2px 2px 0 #29fef0;
+}
+
+#issues {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.multidiv-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.col {
+    width: 50%;
+}
+
+h4 {
+    padding: 1em;
+    color: #d33030;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #ffa967;
+}
+
+li {
+    text-align: left;
+    padding-bottom: 15px;
+    font-size: 1rem;
+}
+
+#visual-p{
+    margin-bottom: 20px;
+}
+
+
+#redesign {
+    width: 75%;
+    margin-bottom: 2em;
+}
+
+#redesign-mobile {
+    width: 25%;
+}
+
+#lofi-2{
+    width: 60%;
+    /* margin-bottom: 2em; */
+}

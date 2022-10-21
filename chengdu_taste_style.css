@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+
+/* jeff's css reset from lecture */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  background-color: #C72B2A;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 100%;
+}
+
+/* ----------------------------- */
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+li, ul {
+  list-style: none;
+}
+
+
+header {
+  background-color: #C72B2A;
+}
+
+.site-nav a {
+  /* transform all text to upper */
+  text-transform: uppercase;
+} 
+
+.logo {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+
+}
+
+.site-nav {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 2vw;
+  padding-right: 2.5vw;
+}
+
+.site-nav-menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+}
+
+
+.btn {
+  border: 2px solid white;
+  border-radius: 1px;
+  text-transform: uppercase;
+
+}
+
+.site-nav li .btn {
+  padding: 0.6em 1.2em;
+}
+
+.site-nav-menu a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.main-brand {
+  font-size: 3.5vw;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+#chengdu {
+  color: #6A0100;
+  -webkit-text-stroke: 3px #6A0100; 
+}
+
+#taste {
+  color: transparent;
+  -webkit-text-stroke: 3.2px #6A0100; 
+}
+
+.site-nav li .site-nav-link:hover {
+  background-color: white;
+  /* make transition ease in  */
+  transition: all .2s ease-in-out 0s;
+  color: #C72B2A;
+}
+
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+#chinese {
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* increase gap between words */
+  letter-spacing: 0.5em;
+}
+
+#chinese-sentence {
+  font-size: 0.90em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.brand-image {
+  width: 2.5em;
+  margin-top: 8px;
+}
+
+
+.gallery-header {
+  font-size: 4.5em;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.gallery-item-info > .btn{  
+  margin-top: 3.5em;
+  padding: 0.6em 1.2em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid #C72B2A;
+}
+
+.gallery-item-info > .btn:hover {
+  background-color: #C72B2A;
+  color: black;
+}
+
+
+.gallery {
+  padding: 2em 2em;
+  background-image: url("orimages/sichuan.png");
+  background-size: cover;
+}
+
+.gallery-item-info {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+/* info sections */
+
+.info-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  /* align-items: center; */
+}
+
+.info-image {
+  display: contents;
+}
+
+/* mobile menu screen */
+@media screen and (max-width: 1200px) {
+  .burger {
+    display: block;
+  }
+  .site-nav-menu {
+    display: none;
+  }
+  .gallery-header {
+    font-size: 5.75vw;
+  }
+  .main-brand {
+    font-size: 2.5em;
+  }
+}
+
+div#location-box {
+  width: 25em 
+}
+
+@media screen and  (max-width: 800px) {
+  .info-box {
+    flex-direction: column;
+  }
+  #menu-box {
+    flex-direction: column-reverse;
+  }
+  #chinese-sentence {
+    display: none;
+  }
+  .main-brand {
+    font-size: 6.5vw;
+  }
+  #chengdu, #taste {
+    -webkit-text-stroke: 0.5vw #6A0100; 
+  }
+  #hl-row > #hl-box > #location-box {
+    width: 100%;
+  }
+  .hours-wrap {
+    text-align: center !important;
+  }
+  wrap1 {
+    display: block !important;
+  }
+}
+
+h2 {
+  /* make uppercase */
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+.info-box img {
+  /* height: 300px; */
+  object-fit: cover;
+  min-width: 55%;
+}
+
+
+.info-box p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.des-col {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
+
+.btn:hover {
+  background-color: white;
+  /* make transition ease in  */
+  transition: all .2s ease-in-out 0s;
+  color: #C72B2A;
+}
+
+.des-col .btn {
+  padding: 0.6em 1.2em;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 2.5em;
+}
+
+wrap {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.hours-wrap .hours {
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+
+#hl-box {
+  padding: 1.5em
+}
+
+.hours-wrap {
+  /* give white border */
+  border: 9px solid white;
+  padding: 1em 4em;
+  text-align: start;
+}
+
+.hours-wrap > .times {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom: 21.8em;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100% !important;
+  width:100% !important;
+  position:absolute;
+}
+
+footer {
+  width:100%;
+  padding: 1em 1em 0.3em 1em;
+  background-color: black;
+}
+
+.order-box {
+  height: 70px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.order {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 3.5px white;
+  font-weight: 900;
+}
+
+.order-box:hover{
+  background-color: white;
+  transition: all .2s ease-in-out 0s;
+  /* change color of text stroke */
+  
+}
+
+.order-box:hover a{
+  color: #C72B2A;
+  -webkit-text-stroke: 4px #C72B2A;
+  transition: all .2s ease-in-out 0s;
+}
+
+wrap1 {
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  display: none;
+}
+
+.order-box {
+  background-color: #C72B2A;
+}
+
+/* make .social horitzonal images all to the left, with slight gap */
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: self-start;
+  margin-top: 1em;
+  gap: 0.3em;
+}
+
+#copyright {
+  font-size: 0.6em;
+  text-align: center;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul.contact {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-right: 3em;
+  font-size: 0.6em;
+}
+
+w {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li.contact-item {
+  text-align: right;
+}
+
+.in, .fb, .tw {
+  cursor: pointer;
+}
+
+img#seal {
+  width: 20%;
+  height: 100%;
+}
